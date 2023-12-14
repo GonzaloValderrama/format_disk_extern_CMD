@@ -1,0 +1,7 @@
+diskpart
+list disk
+select disk X (reemplaza X con el número de tu disco externo)
+clean
+create partition primary
+format fs=ntfs quick (o format fs=fat32 quick si prefieres FAT32)
+assign letter F (reemplaza F con la letra de unidad que desees)
